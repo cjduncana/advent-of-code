@@ -1,5 +1,7 @@
 module TwoB exposing (solution)
 
+import Utils
+
 
 rawInput : String
 rawInput =
@@ -25,10 +27,7 @@ input : List (List Int)
 input =
     rawInput
         |> String.lines
-        |> List.map
-            (String.split " "
-                >> List.filterMap (String.toInt >> Result.toMaybe)
-            )
+        |> List.map (String.split " " >> Utils.convertToIntList)
 
 
 solution : Int

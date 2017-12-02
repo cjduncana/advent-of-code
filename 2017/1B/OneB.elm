@@ -1,6 +1,7 @@
 module OneB exposing (solution)
 
 import Array.Hamt as Array exposing (Array)
+import Utils
 
 
 rawInput : String
@@ -41,7 +42,7 @@ input : Array Int
 input =
     rawInput
         |> String.split ""
-        |> List.filterMap (String.toInt >> Result.toMaybe)
+        |> Utils.convertToIntList
         |> Array.fromList
 
 

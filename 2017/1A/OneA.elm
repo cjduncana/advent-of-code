@@ -1,5 +1,7 @@
 module OneA exposing (solution)
 
+import Utils
+
 
 rawInput : String
 rawInput =
@@ -39,7 +41,7 @@ input : List Int
 input =
     rawInput
         |> String.split ""
-        |> List.filterMap (String.toInt >> Result.toMaybe)
+        |> Utils.convertToIntList
 
 
 solution : Int
