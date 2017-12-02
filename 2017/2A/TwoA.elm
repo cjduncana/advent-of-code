@@ -38,7 +38,7 @@ solution =
     input
         |> List.map
             (List.foldl reducer ( Random.minInt, Random.maxInt )
-                >> subtraction
+                >> \( highest, lowest ) -> highest - lowest
             )
         |> List.sum
 
@@ -46,8 +46,3 @@ solution =
 reducer : Int -> ( Int, Int ) -> ( Int, Int )
 reducer value ( highest, lowest ) =
     ( max value highest, min value lowest )
-
-
-subtraction : ( Int, Int ) -> Int
-subtraction ( highest, lowest ) =
-    highest - lowest
