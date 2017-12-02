@@ -61,13 +61,15 @@ divisible value intList =
 
         int :: ints ->
             let
-                maxInt =
-                    max value int
-
-                minInt =
-                    min value int
+                ( minInt, maxInt ) =
+                    minmaxTuple value int
             in
                 if maxInt % minInt == 0 then
                     Just (maxInt // minInt)
                 else
                     divisible value ints
+
+
+minmaxTuple : comparable -> comparable -> ( comparable, comparable )
+minmaxTuple comparable1 comparable2 =
+    ( min comparable1 comparable2, max comparable1 comparable2 )
