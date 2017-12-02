@@ -45,20 +45,7 @@ solution =
 
 reducer : Int -> ( Int, Int ) -> ( Int, Int )
 reducer value ( highest, lowest ) =
-    let
-        newHigh =
-            if value > highest then
-                value
-            else
-                highest
-
-        newLow =
-            if value < lowest then
-                value
-            else
-                lowest
-    in
-        ( newHigh, newLow )
+    ( max value highest, min value lowest )
 
 
 subtraction : ( Int, Int ) -> Int
