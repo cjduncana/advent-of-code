@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "All my solutions for Advent of Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd 2017/ && elm test && elm analyse && cd ../"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjduncana/advent-of-code.git"
+  },
+  "keywords": [
+    "elm",
+    "javascript",
+    "advent-of-code"
+  ],
+  "author": "Christopher Duncan <cj.duncan.a@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cjduncana/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/cjduncana/advent-of-code#readme"
+}
