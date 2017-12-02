@@ -29,9 +29,7 @@ input =
         |> String.lines
         |> List.map
             (String.split " "
-                >> List.map String.toInt
-                >> List.foldr (Result.map2 (::)) (Ok [])
-                >> Result.withDefault []
+                >> List.filterMap (String.toInt >> Result.toMaybe)
             )
 
 

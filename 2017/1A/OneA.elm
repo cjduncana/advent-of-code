@@ -39,9 +39,7 @@ input : List Int
 input =
     rawInput
         |> String.split ""
-        |> List.map String.toInt
-        |> List.foldr (Result.map2 (::)) (Ok [])
-        |> Result.withDefault []
+        |> List.filterMap (String.toInt >> Result.toMaybe)
 
 
 solution : Int
