@@ -1,14 +1,15 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
-    "license": "BSD3",
+    "summary": "All my solutions for Advent of Code",
+    "repository": "https://github.com/cjduncana/advent-of-code.git",
+    "license": "MIT",
     "source-directories": [
       ".",
       "1A",
       "1B",
       "2A",
-      "2B"
+      "2B",
+      "3A"
     ],
     "exposed-modules": [],
     "dependencies": {

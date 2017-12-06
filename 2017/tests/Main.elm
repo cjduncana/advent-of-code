@@ -4,6 +4,7 @@ import Expect
 import OneA
 import OneB
 import Test exposing (..)
+import ThreeA
 import TwoA
 import TwoB
 
@@ -15,4 +16,5 @@ suite =
         , test "Day 1 B" <| \_ -> Expect.equal OneB.solution 1132
         , test "Day 2 A" <| \_ -> Expect.equal TwoA.solution 53978
         , test "Day 2 B" <| \_ -> Expect.equal TwoB.solution 314
+        , test "Day 3 A" <| \_ -> Expect.equal ThreeA.solution 326
         ]
