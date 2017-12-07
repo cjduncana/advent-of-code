@@ -7,6 +7,7 @@ import FourA
 import FourB
 import OneA
 import OneB
+import SevenA
 import SixA
 import SixB
 import Test exposing (..)
@@ -29,4 +30,5 @@ suite =
         , test "Day 5 B" <| \_ -> Expect.equal FiveB.solution 31150702
         , test "Day 6 A" <| \_ -> Expect.equal SixA.solution 7864
         , test "Day 6 B" <| \_ -> Expect.equal SixB.solution 1695
+        , test "Day 7 A" <| \_ -> Expect.equal SevenA.solution "dgoocsw"
         ]

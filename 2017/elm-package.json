@@ -4,23 +4,25 @@
     "repository": "https://github.com/cjduncana/advent-of-code.git",
     "license": "MIT",
     "source-directories": [
-      "1A",
-      "1B",
-      "2A",
-      "2B",
-      "3A",
-      "4A",
-      "4B",
-      "5A",
-      "5B",
-      "6A",
-      "6B",
-      "."
+        "1A",
+        "1B",
+        "2A",
+        "2B",
+        "3A",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "."
     ],
     "exposed-modules": [],
     "dependencies": {
         "Skinney/elm-array-exploration": "2.0.5 <= v < 3.0.0",
-        "elm-lang/core": "5.1.1 <= v < 6.0.0"
+        "elm-lang/core": "5.1.1 <= v < 6.0.0",
+        "mgold/elm-nonempty-list": "3.1.0 <= v < 4.0.0"
     },
     "elm-version": "0.18.0 <= v < 0.19.0"
 }
