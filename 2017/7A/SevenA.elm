@@ -3,6 +3,7 @@ module SevenA exposing (solution)
 import Dict exposing (Dict)
 import Json.Decode as Decode exposing (Decoder)
 import List.Nonempty as Nonempty exposing (Nonempty(Nonempty))
+import Utils
 
 
 type Tower
@@ -151,21 +152,9 @@ weightDecoder =
 
 input : Result String (Nonempty Tower)
 input =
-    String.lines rawInput
-        |> List.map stringPad
-        |> String.join ","
-        |> listPad
+    rawInput
+        |> Utils.convertToJsonList
         |> Decode.decodeString towersDecoder
-
-
-stringPad : String -> String
-stringPad string =
-    String.concat [ "\"", string, "\"" ]
-
-
-listPad : String -> String
-listPad string =
-    String.concat [ "[", string, "]" ]
 
 
 rawInput : String
