@@ -1,7 +1,7 @@
 module SixB exposing (solution)
 
 import Array.Hamt as Array exposing (Array)
-import Dict exposing (Dict)
+import Dict.LLRB as Dict exposing (Dict)
 
 
 type alias Memory =

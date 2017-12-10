@@ -1,6 +1,6 @@
 module SevenA exposing (solution)
 
-import Dict exposing (Dict)
+import Dict.LLRB as Dict exposing (Dict)
 import Json.Decode as Decode exposing (Decoder)
 import List.Nonempty as Nonempty exposing (Nonempty(Nonempty))
 import Utils

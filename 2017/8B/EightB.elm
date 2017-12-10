@@ -1,6 +1,6 @@
 module EightB exposing (solution)
 
-import Dict exposing (Dict)
+import Dict.LLRB as Dict exposing (Dict)
 import Json.Decode as Decode exposing (Decoder)
 import Random
 import Utils
