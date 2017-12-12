@@ -4,17 +4,7 @@
   "description": "All my solutions for Advent of Code",
   "main": "index.js",
   "scripts": {
-    "test": "cd 2017/ && elm test && elm analyse && elm format . --validate && cd ../",
-    "test:watch": "node_modules/nodemon/bin/nodemon.js --exec npm test"
-  },
-  "nodemonConfig": {
-    "ext": "elm",
-    "ignore": [
-      "elm-stuff"
-    ],
-    "watch": [
-      "*.elm"
-    ]
+    "test": "cd 2017/ && elm test && elm analyse && elm format . --validate && cd ../"
   },
   "repository": {
     "type": "git",
@@ -30,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/cjduncana/advent-of-code/issues"
   },
-  "homepage": "https://github.com/cjduncana/advent-of-code#readme",
-  "devDependencies": {
-    "nodemon": "^1.12.1"
-  }
+  "homepage": "https://github.com/cjduncana/advent-of-code#readme"
 }
