@@ -2,6 +2,8 @@ module Main exposing (suite)
 
 import EightA
 import EightB
+import ElevenA
+import ElevenB
 import Expect
 import FiveA
 import FiveB
@@ -14,6 +16,8 @@ import SixA
 import SixB
 import Test exposing (..)
 import ThreeA
+import TwelveA
+import TwelveB
 import TwoA
 import TwoB
 
@@ -35,4 +39,8 @@ suite =
         , test "Day 7 A" <| \_ -> Expect.equal SevenA.solution "dgoocsw"
         , test "Day 8 A" <| \_ -> Expect.equal EightA.solution 5966
         , test "Day 8 B" <| \_ -> Expect.equal EightB.solution 6347
+        , test "Day 11 A" <| \_ -> Expect.equal ElevenA.solution 643
+        , test "Day 11 B" <| \_ -> Expect.equal ElevenB.solution 1471
+        , test "Day 12 A" <| \_ -> Expect.equal TwelveA.solution 288
+        , test "Day 12 B" <| \_ -> Expect.equal TwelveB.solution 211
         ]

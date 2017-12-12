@@ -1,8 +1,8 @@
 {
     "version": "1.0.0",
     "summary": "Test Suites",
-    "repository": "https://github.com/user/project.git",
-    "license": "BSD3",
+    "repository": "https://github.com/cjduncana/advent-of-code.git",
+    "license": "MIT",
     "source-directories": [
         "../",
         "../1A",
@@ -19,6 +19,10 @@
         "../7A",
         "../8A",
         "../8B",
+        "../11A",
+        "../11B",
+        "../12A",
+        "../12B",
         "."
     ],
     "exposed-modules": [],
